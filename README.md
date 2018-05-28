@@ -63,11 +63,8 @@ $ docker volume inspect hamonia-mon_grafana_data | grep Mountpoint
 $ docker volume inspect hamonia-mon_influxdb_data  | grep Mountpoint
 ```
 
-
 ## 모니터링 화면 예
 
 ![Memory](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/mem.png)
 ![Network](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/network.png)
 ![Disk](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/du.png)
-
-
