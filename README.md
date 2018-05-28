@@ -16,6 +16,7 @@ Grafana 는 시각화 도구입니다.
 쌓여있는 데이터를 효과적으로 시각화 할 수 있도록 해주는 프로그램으로서 모니터링을 위한 대시보드를 만드는 데 많이 사용되고 있습니다.
 
 ## History
+* TO-DO - 하모니아 서비스 모니터링 파이썬 스크립트 추가
 * 2018-05-28 v1.0 - Grafana with InfluxDB Using docker-compose for Hamonia
 
 
@@ -59,16 +60,15 @@ $ docker-compose up -d
 docker 를 재구동해도 데이터가 로컬 서버에 남아 있도록 분석한 데이터는 서버에 보관됩니다.
 데이터가 저장되는 경로는 서버에서 아래의 명령어를 실행하면 알 수 있습니다.
 ```
-$ docker volume inspect hamonia-mon_grafana_data | grep Mountpoint
-$ docker volume inspect hamonia-mon_influxdb_data  | grep Mountpoint
+$ docker volume inspect hamoniamon_grafana_data | grep Mountpoint
+$ docker volume inspect hamoniamon_influxdb_data  | grep Mountpoint
 ```
-
 
 ## 모니터링 화면 예
 
-![Memory](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/mem.png)
-![Network](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/network.png)
-![Disk](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/du.png)
+<img src="https://github.com/ivsteam/hamonia-mon/blob/master/imgs/mem.png" width="600">
+<img src="https://github.com/ivsteam/hamonia-mon/blob/master/imgs/network.png" width="600">
+<img src="https://github.com/ivsteam/hamonia-mon/blob/master/imgs/du.png" width="600">
 
 
 # nmon 으로 리눅스 모니터링 하기
@@ -97,3 +97,4 @@ nmon2influxdb dashboard <nmon 결과 파일>
 ## nmon Dashboard 사용
 - 대시보드를 별도로 만들기 어려운 사용자들을 위해서 미리 준비된 대시보드를 제공합니다.
 - grafana 로그인 후 왼쪽의 Create > Import 메뉴를 이용하면 다운받은 소스코드 중 nmon2influxdb/nmonDashboard.json 파일을 grafana 에서 불러와서 사용할 수 있습니다.
+
