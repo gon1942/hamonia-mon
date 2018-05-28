@@ -16,6 +16,7 @@ Grafana 는 시각화 도구입니다.
 쌓여있는 데이터를 효과적으로 시각화 할 수 있도록 해주는 프로그램으로서 모니터링을 위한 대시보드를 만드는 데 많이 사용되고 있습니다.
 
 ## History
+* TO-DO - 하모니아 서비스 모니터링 파이썬 스크립트 추가
 * 2018-05-28 v1.0 - Grafana with InfluxDB Using docker-compose for Hamonia
 
 
