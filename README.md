@@ -1,4 +1,4 @@
-![Memory](https://github.com/chaeya/DockerGrafanaInfluxKit/blob/master/imgs/mem.png)
+![Memory](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/mem.png)
 
 # Hamonia monitoring
 하모니아 서비스에 대한 모니터링이 필요한 사용자가 쉽게 사용할 수 있도록 시계열 데이터베이스와 대시보드를 포함하여 제공합니다
@@ -66,8 +66,8 @@ $ docker volume inspect hamonia-mon_influxdb_data  | grep Mountpoint
 
 ## 모니터링 화면 예
 
-![Memory](https://github.com/chaeya/DockerGrafanaInfluxKit/blob/master/imgs/mem.png)
-![Network](https://github.com/chaeya/DockerGrafanaInfluxKit/blob/master/imgs/network.png)
-![Disk](https://github.com/chaeya/DockerGrafanaInfluxKit/blob/master/imgs/du.png)
+![Memory](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/mem.png)
+![Network](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/network.png)
+![Disk](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/du.png)
 
 
