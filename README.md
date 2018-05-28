@@ -59,8 +59,8 @@ $ docker-compose up -d
 docker 를 재구동해도 데이터가 로컬 서버에 남아 있도록 분석한 데이터는 서버에 보관됩니다.
 데이터가 저장되는 경로는 서버에서 아래의 명령어를 실행하면 알 수 있습니다.
 ```
-$ docker volume inspect hamonia-mon_grafana_data | grep Mountpoint
-$ docker volume inspect hamonia-mon_influxdb_data  | grep Mountpoint
+$ docker volume inspect hamoniamon_grafana_data | grep Mountpoint
+$ docker volume inspect hamoniamon_influxdb_data  | grep Mountpoint
 ```
 
 
