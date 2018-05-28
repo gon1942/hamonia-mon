@@ -66,6 +66,6 @@ $ docker volume inspect hamoniamon_influxdb_data  | grep Mountpoint
 
 ## 모니터링 화면 예
 
-![Memory](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/mem.png | width=500)
-![Network](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/network.png | width=500)
-![Disk](https://github.com/ivsteam/hamonia-mon/blob/master/imgs/du.png | width=500)
+<img src="https://github.com/ivsteam/hamonia-mon/blob/master/imgs/mem.png" width="500">
+<img src="https://github.com/ivsteam/hamonia-mon/blob/master/imgs/network.png" width="500">
+<img src="https://github.com/ivsteam/hamonia-mon/blob/master/imgs/du.png" width="500">
