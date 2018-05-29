@@ -520,7 +520,9 @@
       }
     },
     {
-      "aliasColors": {},
+      "aliasColors": {
+        "Free": "#f9d9f9"
+      },
       "bars": false,
       "dashLength": 10,
       "dashes": false,
@@ -534,12 +536,12 @@
       },
       "id": 4,
       "legend": {
-        "alignAsTable": true,
+        "alignAsTable": false,
         "avg": false,
         "current": false,
         "max": false,
         "min": false,
-        "rightSide": true,
+        "rightSide": false,
         "show": true,
         "total": false,
         "values": false
@@ -554,7 +556,7 @@
       "renderer": "flot",
       "seriesOverrides": [],
       "spaceLength": 10,
-      "stack": false,
+      "stack": true,
       "steppedLine": false,
       "targets": [
         {
@@ -720,6 +722,7 @@
               "type": "fill"
             }
           ],
+          "hide": true,
           "measurement": "MEM",
           "orderByTime": "ASC",
           "policy": "default",
@@ -750,6 +753,55 @@
               "key": "name",
               "operator": "=",
               "value": "memtotal"
+            }
+          ]
+        },
+        {
+          "alias": "Free",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "MEM",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=",
+              "value": "pms"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "memfree"
             }
           ]
         }
@@ -1351,5 +1403,5 @@
   "timezone": "",
   "title": "JIRA Server Dashboard",
   "uid": "Qof79x4ik",
-  "version": 29
+  "version": 30
 }
