@@ -7,7 +7,7 @@ USER root
 RUN ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime && \
  echo "Asia/Seoul" > /etc/timezone
 
-RUN apt-get update && apt-get install -y curl gettext-base vi && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y curl gettext-base nano && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /etc/grafana
 COPY datasources ./datasources
