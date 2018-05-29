@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y curl gettext-base vi && rm -rf /var/lib
 
 WORKDIR /etc/grafana
 COPY datasources ./datasources
+COPY grafana.ini .
 
 WORKDIR /app
 COPY entrypoint.sh ./
